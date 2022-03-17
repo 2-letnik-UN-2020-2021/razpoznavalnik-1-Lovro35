@@ -1,0 +1,3 @@
+C:/Users/Lovro/CLionProjects/razpoznavalnik-1-Lovro35/cmake-build-debug/CMakeFiles/razpoznavalnik_1_Lovro35.dir
+C:/Users/Lovro/CLionProjects/razpoznavalnik-1-Lovro35/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Lovro/CLionProjects/razpoznavalnik-1-Lovro35/cmake-build-debug/CMakeFiles/rebuild_cache.dir
