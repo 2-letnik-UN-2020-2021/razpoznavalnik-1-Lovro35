@@ -33,9 +33,9 @@ int main(int args, char* argv[])
     E(scanner, notError);
 
     if (scanner->currentToken().getToken() == -1 && notError)
-        cout << "\nAccept" << endl;
+        cout << "accept" << endl;
     else
-        cout << "\nReject" << endl;
+        cout << "reject" << endl;
 
     return 0;
 }
