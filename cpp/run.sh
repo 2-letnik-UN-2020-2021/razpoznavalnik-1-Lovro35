@@ -1,1 +1,1 @@
-src/task "$@"
+build/task "$@"
