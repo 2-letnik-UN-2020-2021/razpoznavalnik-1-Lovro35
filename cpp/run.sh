@@ -1,1 +1,1 @@
-src/Main "$@"
+src/Main.cpp "$@"
