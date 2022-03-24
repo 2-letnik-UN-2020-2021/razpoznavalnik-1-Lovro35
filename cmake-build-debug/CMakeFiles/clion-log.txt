@@ -1,1 +1,0 @@
-CMakeLists.txt not found in C:\Users\Lovro\CLionProjects\razpoznavalnik-1-Lovro35 Select CMakeLists.txt
