@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "razpoznavalnik_1_Lovro35",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "razpoznavalnik_1_Lovro35::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-razpoznavalnik_1_Lovro35-Debug-b87fe80afe83d2eda5c5.json",
+					"name" : "razpoznavalnik_1_Lovro35",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Lovro/CLionProjects/razpoznavalnik-1-Lovro35/cpp/cmake-build-debug",
+		"source" : "C:/Users/Lovro/CLionProjects/razpoznavalnik-1-Lovro35/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
