@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: task
+# Project: razpoznavalnik-1-Lovro35
 # Configurations: Debug
 # =============================================================================
 
@@ -40,39 +40,6 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:/Users/Lovro/CLionProjects/razpoznavalnik-1-Lovro35/cpp/cmake-build-debug/
-# =============================================================================
-# Object build statements for EXECUTABLE target task
-
-
-#############################################
-# Order-only phony target for task
-
-build cmake_object_order_depends_target_task: phony || CMakeFiles/task.dir
-
-build CMakeFiles/task.dir/src/task.cpp.obj: CXX_COMPILER__task_Debug C$:/Users/Lovro/CLionProjects/razpoznavalnik-1-Lovro35/cpp/src/task.cpp || cmake_object_order_depends_target_task
-  DEP_FILE = CMakeFiles\task.dir\src\task.cpp.obj.d
-  FLAGS = -g -std=gnu++20
-  OBJECT_DIR = CMakeFiles\task.dir
-  OBJECT_FILE_DIR = CMakeFiles\task.dir\src
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target task
-
-
-#############################################
-# Link the executable task.exe
-
-build task.exe: CXX_EXECUTABLE_LINKER__task_Debug CMakeFiles/task.dir/src/task.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\task.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = task.exe
-  TARGET_IMPLIB = libtask.dll.a
-  TARGET_PDB = task.exe.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -83,6 +50,45 @@ build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target razpoznavalnik-1-Lovro35
+
+
+#############################################
+# Order-only phony target for razpoznavalnik-1-Lovro35
+
+build cmake_object_order_depends_target_razpoznavalnik-1-Lovro35: phony || CMakeFiles/razpoznavalnik-1-Lovro35.dir
+
+build CMakeFiles/razpoznavalnik-1-Lovro35.dir/src/task.cpp.obj: CXX_COMPILER__razpoznavalnik-1-Lovro35_Debug C$:/Users/Lovro/CLionProjects/razpoznavalnik-1-Lovro35/cpp/src/task.cpp || cmake_object_order_depends_target_razpoznavalnik-1-Lovro35
+  DEP_FILE = CMakeFiles\razpoznavalnik-1-Lovro35.dir\src\task.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\razpoznavalnik-1-Lovro35.dir
+  OBJECT_FILE_DIR = CMakeFiles\razpoznavalnik-1-Lovro35.dir\src
+
+build CMakeFiles/razpoznavalnik-1-Lovro35.dir/src/Main.cpp.obj: CXX_COMPILER__razpoznavalnik-1-Lovro35_Debug C$:/Users/Lovro/CLionProjects/razpoznavalnik-1-Lovro35/cpp/src/Main.cpp || cmake_object_order_depends_target_razpoznavalnik-1-Lovro35
+  DEP_FILE = CMakeFiles\razpoznavalnik-1-Lovro35.dir\src\Main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\razpoznavalnik-1-Lovro35.dir
+  OBJECT_FILE_DIR = CMakeFiles\razpoznavalnik-1-Lovro35.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target razpoznavalnik-1-Lovro35
+
+
+#############################################
+# Link the executable razpoznavalnik-1-Lovro35.exe
+
+build razpoznavalnik-1-Lovro35.exe: CXX_EXECUTABLE_LINKER__razpoznavalnik-1-Lovro35_Debug CMakeFiles/razpoznavalnik-1-Lovro35.dir/src/task.cpp.obj CMakeFiles/razpoznavalnik-1-Lovro35.dir/src/Main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\razpoznavalnik-1-Lovro35.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = razpoznavalnik-1-Lovro35.exe
+  TARGET_IMPLIB = librazpoznavalnik-1-Lovro35.dll.a
+  TARGET_PDB = razpoznavalnik-1-Lovro35.exe.dbg
 
 
 #############################################
@@ -99,7 +105,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build task: phony task.exe
+build razpoznavalnik-1-Lovro35: phony razpoznavalnik-1-Lovro35.exe
 
 # =============================================================================
 # Folder targets.
@@ -109,7 +115,7 @@ build task: phony task.exe
 #############################################
 # Folder: C:/Users/Lovro/CLionProjects/razpoznavalnik-1-Lovro35/cpp/cmake-build-debug
 
-build all: phony task.exe
+build all: phony razpoznavalnik-1-Lovro35.exe
 
 # =============================================================================
 # Built-in targets

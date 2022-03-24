@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(task)
+project(razpoznavalnik-1-Lovro35)
 
-add_executable(task src/task.cpp)
-set_property(TARGET task PROPERTY CXX_STANDARD 20)
+add_executable(razpoznavalnik-1-Lovro35 src/task.cpp src/Main.cpp src/Scanner.h src/Token.h)
+set_property(TARGET razpoznavalnik-1-Lovro35 PROPERTY CXX_STANDARD 20)

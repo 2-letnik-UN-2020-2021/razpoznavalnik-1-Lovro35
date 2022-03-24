@@ -22,9 +22,6 @@ int main(int args, char* argv[])
 {
     ifstream* file = new ifstream();
     file->open(argv[1]);
-    //file->open("FileAccept.txt");
-    //file->open("FileReject.txt");
-    //file->open("FileReject2.txt");
 
     Scanner* scanner = new Scanner(file);
 
@@ -52,9 +49,7 @@ int main(int args, char* argv[])
 // 9 power
 
 bool TT(Scanner*& scanner, bool& notError) {
-    cout << "CALLED TT " << scanner->currentToken().getToken() << endl;
     if (scanner->currentToken().getToken() == 7 || scanner->currentToken().getToken() == 8 || scanner->currentToken().getToken() == 9) { // * / ^
-        cout << "\t '* / ^' " << endl;
         scanner->nextToken();
         notError = F(scanner, notError);
         notError = TT(scanner, notError);
@@ -63,39 +58,30 @@ bool TT(Scanner*& scanner, bool& notError) {
 }
 
 bool F(Scanner*& scanner, bool& notError) {
-    cout << "CALLED F  " << scanner->currentToken().getToken() << endl;
     if (scanner->currentToken().getToken() == 3) { // (
-        cout << "\t '(' " << endl;
         scanner->nextToken();
         notError = E(scanner, notError);
         if (scanner->currentToken().getToken() == 4) { // )
-            cout << "\t ')' " << endl;
             scanner->nextToken();
         }
         else {
-            cout << "Exit1" << endl;
             return false;
         }
     }
     else if (scanner->currentToken().getToken() == 1) { // float
-        cout << "\t '0 .. 9' " << endl;
         scanner->nextToken();
     }
     else if (scanner->currentToken().getToken() == 2) { // variable
-        cout << "\t 'a .. z' " << endl;
         scanner->nextToken();
     }
     else {
-        cout << "Exit2" << endl;
         return false;
     }
     return notError;
 }
 
 bool EE(Scanner*& scanner, bool& notError) {
-    cout << "CALLED EE " << scanner->currentToken().getToken() << endl;
     if (scanner->currentToken().getToken() == 5 || scanner->currentToken().getToken() == 6) { // + -
-        cout << "\t '+ -' " << endl;
         scanner->nextToken();
         notError = T(scanner, notError);
         notError = EE(scanner, notError);
@@ -104,14 +90,12 @@ bool EE(Scanner*& scanner, bool& notError) {
 }
 
 bool T(Scanner*& scanner, bool& notError) {
-    cout << "CALLED T  " << scanner->currentToken().getToken() << endl;
     notError = F(scanner, notError);
     notError = TT(scanner, notError);
     return notError;
 }
 
 bool E(Scanner*& scanner, bool& notError) {
-    cout << "CALLED E  " << scanner->currentToken().getToken() << endl;
     notError = T(scanner, notError);
     notError = EE(scanner, notError);
     return notError;
