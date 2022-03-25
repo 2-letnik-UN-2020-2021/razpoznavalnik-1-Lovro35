@@ -66,12 +66,6 @@ build CMakeFiles/razpoznavalnik-1-Lovro35.dir/src/task.cpp.obj: CXX_COMPILER__ra
   OBJECT_DIR = CMakeFiles\razpoznavalnik-1-Lovro35.dir
   OBJECT_FILE_DIR = CMakeFiles\razpoznavalnik-1-Lovro35.dir\src
 
-build CMakeFiles/razpoznavalnik-1-Lovro35.dir/src/Main.cpp.obj: CXX_COMPILER__razpoznavalnik-1-Lovro35_Debug C$:/Users/Lovro/CLionProjects/razpoznavalnik-1-Lovro35/cpp/src/Main.cpp || cmake_object_order_depends_target_razpoznavalnik-1-Lovro35
-  DEP_FILE = CMakeFiles\razpoznavalnik-1-Lovro35.dir\src\Main.cpp.obj.d
-  FLAGS = -g -std=gnu++20
-  OBJECT_DIR = CMakeFiles\razpoznavalnik-1-Lovro35.dir
-  OBJECT_FILE_DIR = CMakeFiles\razpoznavalnik-1-Lovro35.dir\src
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target razpoznavalnik-1-Lovro35
@@ -80,7 +74,7 @@ build CMakeFiles/razpoznavalnik-1-Lovro35.dir/src/Main.cpp.obj: CXX_COMPILER__ra
 #############################################
 # Link the executable razpoznavalnik-1-Lovro35.exe
 
-build razpoznavalnik-1-Lovro35.exe: CXX_EXECUTABLE_LINKER__razpoznavalnik-1-Lovro35_Debug CMakeFiles/razpoznavalnik-1-Lovro35.dir/src/task.cpp.obj CMakeFiles/razpoznavalnik-1-Lovro35.dir/src/Main.cpp.obj
+build razpoznavalnik-1-Lovro35.exe: CXX_EXECUTABLE_LINKER__razpoznavalnik-1-Lovro35_Debug CMakeFiles/razpoznavalnik-1-Lovro35.dir/src/task.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\razpoznavalnik-1-Lovro35.dir
